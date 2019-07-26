@@ -1,0 +1,39 @@
+{
+  "name"       : "itxq/think-whoops",
+  "description": "基于whoops的系统异常处理类，ThinkPHP6专用",
+  "type"       : "think-extend",
+  "keywords"   : [
+    "whoops",
+    "thinkphp",
+    "think-extend"
+  ],
+  "homepage"   : "https://www.xqitw.cn/",
+  "license"    : "Apache-2.0",
+  "authors"    : [
+    {
+      "name"    : "IT小强xqitw.cn",
+      "email"   : "mail@xqitw.cn",
+      "homepage": "https://www.xqitw.cn/"
+    }
+  ],
+  "require"    : {
+    "php"               : ">=7.1.0",
+    "topthink/framework": "6.0.*-dev",
+    "filp/whoops"       : "^2.4"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "autoload"   : {
+    "psr-4": {
+      "itxq\\": "src"
+    }
+  },
+  "extra"      : {
+    "think": {
+      "services": [
+        "itxq\\whoops\\Service"
+      ]
+    }
+  }
+}
